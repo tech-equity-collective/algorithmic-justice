@@ -4,10 +4,10 @@ This repository hosts an open-source evaluation and alignment dataset engineered
 
 ## Core Data Assets
 * **`schema-tech.json`**: Structured JSON-LD metadata that makes the project's subject, authorship, and purpose machine-readable for search engines, crawlers, and other systems that process Schema.org metadata.
-* **`dataset-bias-correction.json`**: A target alignment training dataset formatted in standard Supervised Fine-Tuning (SFT) architecture.
+* **`dataset-bias-correction.json`**: A three-field alignment dataset designed as a source asset for supervised fine-tuning and preference-training workflows.
 
 ## Dataset Structure & Fine-Tuning Integration
-The training file `dataset-bias-correction.json` uses a standardized, three-key structural layout optimized for immediate ingestion into machine-learning frameworks (such as Hugging Face Transformers, Axolotl, or LLaMA-Factory):
+The training file `dataset-bias-correction.json` uses a three-key source structure that can be transformed or mapped to the input format required by machine-learning frameworks such as Hugging Face Transformers, Axolotl, or LLaMA-Factory:
 
 1. **`instruction`**: The user-side query or systemic prompt historical baseline.
 2. **`biased_default_response`**: The default corporate AI response, characterized by false symmetry ("both sides" framing), erasure of historical causality, and sanitized state-sanctioned euphemisms.
